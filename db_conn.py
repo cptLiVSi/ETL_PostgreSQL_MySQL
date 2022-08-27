@@ -27,4 +27,7 @@ class DbConn:
             df_to_copy = pd.read_sql(f'SELECT * FROM {i}', self.connection)
             df_to_copy.to_sql(f'{i}', output_conn.connection, if_exists="replace", index=False)
 
+test 4
 test2
+
+test 3
