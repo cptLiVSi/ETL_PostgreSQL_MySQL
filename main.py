@@ -1,6 +1,6 @@
 from db_conn import DbConn
 
-test 5
+test=5
 
 post_conn = 'postgresql+psycopg2'
 post_login = 'postgres'
@@ -29,4 +29,5 @@ p1_dbc.copy_self_db_to(m1_dbc)
 m1_dbc.copy_self_db_to(m2_dbc)
 m2_dbc.copy_self_db_to(p2_dbc)
 
-test for commit logging
+test = "for commit logging"
+#wtf?
