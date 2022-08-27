@@ -12,7 +12,6 @@ class DbConn:
         self.db_name = db_name
         self.connection = create_engine(
             fr'{self.connector}://{self.login}:{self.password}@{self.host}:{self.port}/{self.db_name}')
-        super().__init__()
 
     def copy_self_db_to(self, output_conn):
         if self.connector == 'postgresql+psycopg2':
