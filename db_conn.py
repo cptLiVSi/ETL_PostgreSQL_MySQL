@@ -26,3 +26,5 @@ class DbConn:
         for i in list_of_tables[table_name]:
             df_to_copy = pd.read_sql(f'SELECT * FROM {i}', self.connection)
             df_to_copy.to_sql(f'{i}', output_conn.connection, if_exists="replace", index=False)
+
+test2

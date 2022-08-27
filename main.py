@@ -26,3 +26,5 @@ nw_dbc.copy_self_db_to(p1_dbc)
 p1_dbc.copy_self_db_to(m1_dbc)
 m1_dbc.copy_self_db_to(m2_dbc)
 m2_dbc.copy_self_db_to(p2_dbc)
+
+test for commit logging
