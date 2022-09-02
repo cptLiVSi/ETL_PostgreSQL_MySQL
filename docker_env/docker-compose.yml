@@ -15,6 +15,7 @@ services:
       - 3306:3306
     volumes:
       - ./test_db-master:/tmp/test_db-master
+
   dbpostgresql:
     image: postgres:14
     restart: always
