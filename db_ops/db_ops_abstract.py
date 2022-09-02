@@ -1,6 +1,7 @@
 import pandas as pd
 from sqlalchemy import create_engine
 from sqlalchemy import inspect
+from sqlalchemy_utils import database_exists, create_database
 
 
 class DbOpsAbstract:
@@ -16,6 +17,9 @@ class DbOpsAbstract:
         self.engine = create_engine(
             fr'{self.rdbms_type}+{self.adapter}://{self.login}:'
             fr'{self.password}@{self.host}:{self.port}/{self.db_name}')
+        if not database_exists(self.engine.url):
+            create_database(self.engine.url)
+
 
     def open_connection(self):
         self.connection = self.engine.connect()

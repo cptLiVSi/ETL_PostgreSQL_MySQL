@@ -1,4 +1,4 @@
-from db_ops_abstract import DbOpsAbstract
+from db_ops.db_ops_abstract import DbOpsAbstract
 
 
 class PostgreOps(DbOpsAbstract):

@@ -1,5 +1,5 @@
-from postgre_ops import PostgreOps
-from mysql_ops import MysqlOps
+from db_ops.postgre_ops import PostgreOps
+from db_ops.mysql_ops import MysqlOps
 
 post_adapter = 'psycopg2'
 post_login = 'postgres'
