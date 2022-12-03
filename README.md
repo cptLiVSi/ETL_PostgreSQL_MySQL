@@ -35,3 +35,18 @@ port = '3306'
 4. mysql - postgre    (m2 -> p2)
 5. ???
 6. PROFIT!!!
+
+
+
+## Implemented adapters
+| Service                  | Config example                                        |
+|--------------------------|-------------------------------------------------------|
+| Athena                   | [config](config_examples/athena.yaml)                 | <a name="athena"></a>
+| DynamoDB                 | [config](config_examples/dynamodb.yaml)               | <a name="dynamodb"></a>
+| Glue                     | [config](config_examples/glue.yaml)                   | <a name="glue"></a>
+| Kinesis                  | [config](config_examples/kinesis.yaml)                | <a name="kinesis"></a>
+| Quicksight               | [config](config_examples/quicksight.yaml)             | <a name="quicksight"></a>
+| S3                       | [config](config_examples/s3.yaml)                     | <a name="s3"></a>
+| Sagemaker                | [config](config_examples/sagemaker.yaml)              | <a name="sagemaker"></a>
+| SQS   <a name="sqs"></a> | [config](config_examples/sqs.yaml)                    |
+| SagemakerFeaturestore    | [config](config_examples/sagemaker_featurestore.yaml) | <a name="sagemaker_featurestore"></a>
